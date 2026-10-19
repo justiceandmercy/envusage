@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envusage"
+version = "0.1.0"
+description = "Compare environment variables used in code with a declared template."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "envusage contributors"}]
+
+[project.scripts]
+envusage = "envusage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
